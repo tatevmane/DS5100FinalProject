@@ -24,7 +24,67 @@ This project implements a dice simulator that allows you to create and roll vari
 
 ## API description
 
-A list of all classes with their public methods and attributes. Each item should show their docstrings. All parameters (with data types and defaults) should be described. All return values should be described. Do not describe private methods and attributes.
+### Die class: <br>
+#### Methods: 
+
+def __init__(self, faces: np.array):
+    
+    """ Initializes a Die instance with a list of faces, each having an initial weight of 1.
+
+      Args:
+          faces: List of distinct symbols or values that are integers or strings representing the faces of the die.
+
+      Returns:
+          None
+       """
+       
+def weight(self, face: str or int, new_weight: float):       
+
+      """
+      Changes the weight of a specific face on the die.
+
+      Args:
+       face (str or int): The face value to change the weight of.
+       new_weight (float): The new weight to assign to the face.
+
+      Returns:
+       None
+      """
+      
+ def dice_roll(self, times: int = 1) -> List[str or int]:
+       
+      """
+      Rolls the die one or more times and returns the outcomes.
+
+      Args:
+       times (int, optional): The number of times to roll the die. Default is 1.
+
+      Returns:
+       List[str or int]: A list of outcomes from rolling the die.
+       """
+       
+def dice_state(self) -> pd.DataFrame:
+      
+      """
+      Returns a dictionary containing the current state of the die.
+
+      Returns:
+       dict: A dictionary with 'faces' and 'weights' keys representing the current state of the die.
+       """
+
+
+## Game class: <br>
+#### Methods:
+
+#### Attributes:
+
+
+## Analyzer class: <br>
+#### Methods:
+
+#### Attributes:
+
+All parameters (with data types and defaults) should be described. All return values should be described. Do not describe private methods and attributes.
 
 ## Installation
 
@@ -34,15 +94,15 @@ A list of all classes with their public methods and attributes. Each item should
    git clone https://github.com/tatevmane/tatevmane_ds5100_montecarlo
    cd montecarlo
 
-Install required dependencies:
-pip install numpy 
+2. Install required dependencies: <br>
+pip install numpy <br>
 pip install pandas
 
-import packages:
-import numpy as np
+3. Import packages: <br>
+import numpy as np <br>
 import pandas as pd
 
-import necessary classes for script:
+4. Import necessary classes for script:<br>
 from montecarlo import Die, Game, Analyzer
 
 Create instances of Die, Game, and Analyzer classes, and use their methods as described in the documentation.
