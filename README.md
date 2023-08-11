@@ -10,7 +10,7 @@ Project Name: Monte Carlo Simulator
 - [Installation](#installation)
 - [Usage](#usage)
 - [Scenarios](#scenarios)
-- [Contributions](#contributing)
+- [Contributions](#contributions)
 - [License info](#license)
 
 ## Synopsis
