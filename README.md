@@ -1,7 +1,7 @@
-# DS5100FinalProject
-Monte Carlo Simulator 
+# Monte Carlo Simulator 
 
-Metadata: Specify your name and the project name (i.e. Monte Carlo Simulator).
+Author: Tatev Gomtsyan
+Project Name: Monte Carlo Simulator
 
 Synopsis: Show brief demo code of how the classes are used, i.e. code snippets showing how to install, import, and use the code to (1) create dice, (2) play a game, and (3) analyze a game. You can use preformatted blocks for the code.
 
@@ -22,35 +22,33 @@ This project implements a dice simulator that allows you to create and roll vari
 - [Installation](#installation)
 - [Usage](#usage)
 - [Scenarios](#scenarios)
-- [Contributing](#contributing)
-- [License](#license)
+- [Contributions](#contributing)
+- [License info](#license)
 
 ## Installation
 
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/yourusername/dice-simulator.git
-   cd dice-simulator
+   git clone https://github.com/tatevmane/tatevmane_ds5100_montecarlo
+   cd montecarlo
 
 Install required dependencies:
 pip install -r requirements.txt
 
 import necessary classes for script:
-from DieClass import Die
-from GameClass import Game
-from AnalyzerClass import Analyzer
-
+from montecarlo import Die, Game, Analyzer
 
 Create instances of Die, Game, and Analyzer classes, and use their methods as described in the documentation.
 
+## Usage
 
-Scenarios
-For scenarios demonstrating the usage of the simulator, refer to the provided Jupyter Notebook Scenarios.ipynb.
+## Scenarios
+For scenarios demonstrating the usage of the simulator, refer to the provided Jupyter Notebook Scenarios.ipynb. Below are snippets from those scenarios as an application example.
 
-Contributing
+## Contributing
 Contributions to this project are welcome! Feel free to submit issues and pull requests.
 
-License
+## License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
