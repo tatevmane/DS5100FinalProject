@@ -1,15 +1,20 @@
 # Monte Carlo Simulator 
 
-Author: Tatev Gomtsyan
+Author: Tatev Gomtsyan <br>
 Project Name: Monte Carlo Simulator
 
-Synopsis: Show brief demo code of how the classes are used, i.e. code snippets showing how to install, import, and use the code to (1) create dice, (2) play a game, and (3) analyze a game. You can use preformatted blocks for the code.
 
-API description: A list of all classes with their public methods and attributes. Each item should show their docstrings. All parameters (with data types and defaults) should be described. All return values should be described. Do not describe private methods and attributes.
+## Table of Contents
 
+- [Synopsis](#synopsis)
+- [API description](#api)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Example Scenarios](#scenarios)
+- [Contributions](#contributing)
+- [License info](#license)
 
-TEMPLATE OUTLINING STEPS FOR PROJECT TO USER:
-# Dice Simulator Project
+## Synopsis
 
 This project implements a dice simulator that allows you to create and roll various types of dice in different games. It includes three main classes: `Die`, `Game`, and `Analyzer`.
 
@@ -17,13 +22,9 @@ This project implements a dice simulator that allows you to create and roll vari
 - The `Game` class simulates rolling multiple dice in a game and keeps track of the results.
 - The `Analyzer` class computes descriptive statistics about the game's results.
 
-## Table of Contents
+## API description
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Example Scenarios](#scenarios)
-- [Contributions](#contributing)
-- [License info](#license)
+A list of all classes with their public methods and attributes. Each item should show their docstrings. All parameters (with data types and defaults) should be described. All return values should be described. Do not describe private methods and attributes.
 
 ## Installation
 
