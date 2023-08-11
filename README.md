@@ -6,10 +6,10 @@ Project Name: Monte Carlo Simulator
 ## Table of Contents
 
 - [Synopsis](#synopsis)
-- [API description](#apidescription)
+- [API](#api)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Example Scenarios](#examplescenarios)
+- [Scenarios](#scenarios)
 - [Contributions](#contributing)
 - [License info](#license)
 
@@ -21,7 +21,7 @@ This project implements a dice simulator that allows you to create and roll vari
 - The `Game` class simulates rolling multiple dice in a game and keeps track of the results.
 - The `Analyzer` class computes descriptive statistics about the game's results.
 
-## API description
+## API
 
 ### Die Class Methods: 
 
@@ -250,7 +250,7 @@ combo_counts = analyzer.combo_count()
 Get the counts of distinct permutations of rolled faces: <br>
 perm_counts = analyzer.permutation_count()
 
-## Example Scenarios
+## Scenarios
 For scenarios demonstrating the usage of the simulator, refer to the provided Tatev_FinalProject.ipynb. Below are snippets from those scenarios as an application example. <br>
 ![image](https://github.com/tatevmane/tatevmane_ds5100_montecarlo/assets/90347726/a0ab3529-552f-4546-80ba-93ebb4a600e6) 
 
