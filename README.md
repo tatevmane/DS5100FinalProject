@@ -173,16 +173,19 @@ def permutation_count(self) -> pd.DataFrame:
    git clone https://github.com/tatevmane/tatevmane_ds5100_montecarlo
    cd montecarlo
 
-2. Install required dependencies: <br>
-<pip install numpy> <br>
-<pip install pandas>
+2. Install required dependencies in terminal: <br>
+
+    pip install numpy <br>
+    pip install pandas
 
 3. Import packages: <br>
-`import numpy as np 
-import pandas as pd`
+
+    `import numpy as np 
+    import pandas as pd`
 
 4. Import necessary classes for script:<br>
-from montecarlo import Die, Game, Analyzer
+
+    `from montecarlo import Die, Game, Analyzer`
 
 Create instances of Die, Game, and Analyzer classes, and use their methods as described in the documentation.
 
