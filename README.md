@@ -25,7 +25,7 @@ This project implements a dice simulator that allows you to create and roll vari
 
 ### Die Class Methods: 
 
-def __init__(self, faces: np.array):
+`def __init__(self, faces: np.array):`
     
     """
     Initializes a Die instance with a list of faces, each having an initial weight of 1.
@@ -37,7 +37,7 @@ def __init__(self, faces: np.array):
           None
        """
        
-def weight(self, face: str or int, new_weight: float):       
+`def weight(self, face: str or int, new_weight: float):`      
 
       """
       Changes the weight of a specific face on the die.
@@ -50,7 +50,7 @@ def weight(self, face: str or int, new_weight: float):
        None
       """
       
- def dice_roll(self, times: int = 1) -> List[str or int]:
+ `def dice_roll(self, times: int = 1) -> List[str or int]:`
        
       """
       Rolls the die one or more times and returns the outcomes.
@@ -62,7 +62,7 @@ def weight(self, face: str or int, new_weight: float):
        List[str or int]: A list of outcomes from rolling the die.
        """
        
-def dice_state(self) -> pd.DataFrame:
+`def dice_state(self) -> pd.DataFrame:`
       
       """
       Returns a dictionary containing the current state of the die.
@@ -74,7 +74,7 @@ def dice_state(self) -> pd.DataFrame:
 
 ### Game Class Methods:
 
-def __init__(self, dice_list):
+`def __init__(self, dice_list):`
     
     """
       Initializes a Game instance with a list of Die objects representing the dice in the game.
@@ -86,7 +86,7 @@ def __init__(self, dice_list):
             None
         """
 
-def play(self, num_rolls: 1):
+`def play(self, num_rolls: 1):`
     
     """
       Rolls all dice a specified number of times and saves the results.
@@ -98,7 +98,7 @@ def play(self, num_rolls: 1):
          None
          """
 
-def show_results(self, form = "wide") -> pd.DataFrame:
+`def show_results(self, form = "wide") -> pd.DataFrame:`
     
      """
       Returns the results of the most recent play in wide or narrow format.
@@ -113,7 +113,7 @@ def show_results(self, form = "wide") -> pd.DataFrame:
 
 ### Analyzer Class Methods:
 
-def __init__(self, game: Game):
+`def __init__(self, game: Game):`
     
     """
       Initializes an Analyzer instance with a Game object for analysis.
@@ -125,7 +125,7 @@ def __init__(self, game: Game):
            None
        """
 
-def jackpot(self) -> int:
+`def jackpot(self) -> int:`
     
     """
        Computes the number of jackpot results in the game.
@@ -135,7 +135,7 @@ def jackpot(self) -> int:
            int: The count of jackpot results.
        """
 
-def face_counts_per_roll(self):
+`def face_counts_per_roll(self):`
        
         """
         Computes the count of a specific face rolled in each event (roll).
@@ -147,7 +147,7 @@ def face_counts_per_roll(self):
             pd.DataFrame: A DataFrame with roll numbers as the index, face values as columns, and counts in cells.
         """
 
-def combo_count(self) -> pd.DataFrame:
+`def combo_count(self) -> pd.DataFrame:`
        
         """
         Computes the count of distinct combinations of rolled faces.
@@ -156,7 +156,7 @@ def combo_count(self) -> pd.DataFrame:
             pd.DataFrame: A DataFrame with distinct combinations as the MultiIndex and counts in a column.
         """
 
-def permutation_count(self) -> pd.DataFrame:
+`def permutation_count(self) -> pd.DataFrame:`
        
         """
         Computes the count of distinct permutations of rolled faces.
