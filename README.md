@@ -180,10 +180,11 @@ def permutation_count(self) -> pd.DataFrame:
 
 3. Import packages: <br>
 
-    `import numpy as np 
-    import pandas as pd`
+    `import numpy as np`
+   
+   ` import pandas as pd`
 
-4. Import necessary classes for script:<br>
+5. Import necessary classes for script:<br>
 
     `from montecarlo import Die, Game, Analyzer`
 
@@ -211,8 +212,9 @@ Get the current state of the die: <br>
 ### For Game Class
 
 Create Die instances: <br>
-`die1 = Die([1, 2, 3, 4, 5, 6]) 
-die2 = Die(['A', 'B', 'C', 'D'])`
+`die1 = Die([1, 2, 3, 4, 5, 6])`
+
+`die2 = Die(['A', 'B', 'C', 'D'])`
 
 Create a Game instance: <br>
 `my_game = Game([die1, die2])`
@@ -229,8 +231,9 @@ Display results in narrow format: <br>
 ### For Analyzer Class
 
 Create Die instances: <br>
-`die1 = Die([1, 2, 3, 4, 5, 6]) 
-die2 = Die(['A', 'B', 'C', 'D'])`
+`die1 = Die([1, 2, 3, 4, 5, 6])`
+
+`die2 = Die(['A', 'B', 'C', 'D'])`
 
 Create a Game instance: <br>
 `my_game = Game([die1, die2])`
