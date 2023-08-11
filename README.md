@@ -34,7 +34,12 @@ This project implements a dice simulator that allows you to create and roll vari
    cd montecarlo
 
 Install required dependencies:
-pip install -r requirements.txt
+pip install numpy 
+pip install pandas
+
+import packages:
+import numpy as np
+import pandas as pd
 
 import necessary classes for script:
 from montecarlo import Die, Game, Analyzer
@@ -45,19 +50,19 @@ Create instances of Die, Game, and Analyzer classes, and use their methods as de
 
 ### For Die Class
 
-#Define faces for the die
+Define faces for the die:
 faces = [1, 2, 3, 4, 5, 6]
 
-#Create a Die instance
+Create a Die instance:
 my_die = Die(faces)
 
-#Change the weight of a face
+Change the weight of a face:
 my_die.weight(1, 2.5)
 
-#Roll the die
+Roll the die:
 outcome = my_die.dice_roll()
 
-#Get the current state of the die
+Get the current state of the die:
 state = my_die.dice_state()
 
 ### For Game Class
