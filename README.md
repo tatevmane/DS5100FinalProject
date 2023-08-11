@@ -111,7 +111,8 @@ Get the counts of distinct permutations of rolled faces: <br>
 perm_counts = analyzer.permutation_count()
 
 ## Example Scenarios
-For scenarios demonstrating the usage of the simulator, refer to the provided Jupyter Notebook Scenarios.ipynb. Below are snippets from those scenarios as an application example.
+For scenarios demonstrating the usage of the simulator, refer to the provided Tatev_FinalProject.ipynb. Below are snippets from those scenarios as an application example. <br>
+![image](https://github.com/tatevmane/tatevmane_ds5100_montecarlo/assets/90347726/a0ab3529-552f-4546-80ba-93ebb4a600e6) 
 
 ## Contributing
 Contributions to this project are welcome! Feel free to submit issues and pull requests.
