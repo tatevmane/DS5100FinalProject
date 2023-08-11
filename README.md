@@ -3,14 +3,13 @@
 Author: Tatev Gomtsyan <br>
 Project Name: Monte Carlo Simulator
 
-
 ## Table of Contents
 
 - [Synopsis](#synopsis)
-- [API description](#api)
+- [API description](#apidescription)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Example Scenarios](#scenarios)
+- [Example Scenarios](#examplescenarios)
 - [Contributions](#contributing)
 - [License info](#license)
 
@@ -24,12 +23,12 @@ This project implements a dice simulator that allows you to create and roll vari
 
 ## API description
 
-### Die class: <br>
-#### Methods: 
+### Die Class Methods: 
 
 def __init__(self, faces: np.array):
     
-    """ Initializes a Die instance with a list of faces, each having an initial weight of 1.
+    """
+    Initializes a Die instance with a list of faces, each having an initial weight of 1.
 
       Args:
           faces: List of distinct symbols or values that are integers or strings representing the faces of the die.
@@ -73,18 +72,98 @@ def dice_state(self) -> pd.DataFrame:
        """
 
 
-## Game class: <br>
-#### Methods:
+### Game Class Methods:
 
-#### Attributes:
+def __init__(self, dice_list):
+    
+    """
+      Initializes a Game instance with a list of Die objects representing the dice in the game.
 
+      Args:
+            dice_list (List[Die]): A list of Die objects representing the dice in the game.
 
-## Analyzer class: <br>
-#### Methods:
+      Returns:
+            None
+        """
 
-#### Attributes:
+def play(self, num_rolls: 1):
+    
+    """
+      Rolls all dice a specified number of times and saves the results.
 
-All parameters (with data types and defaults) should be described. All return values should be described. Do not describe private methods and attributes.
+      Args:
+         num_rolls (int): The number of times to roll the dice.
+
+      Returns:
+         None
+         """
+
+def show_results(self, form = "wide") -> pd.DataFrame:
+    
+     """
+      Returns the results of the most recent play in wide or narrow format.
+
+      Args:
+          form (str, optional): The format for displaying results as either "wide" or "narrow". The default
+          is set as "wide".
+
+      Returns:
+          pd.DataFrame: The results of the most recent play in the specified format.
+      """
+
+### Analyzer Class Methods:
+
+def __init__(self, game: Game):
+    
+    """
+      Initializes an Analyzer instance with a Game object for analysis.
+
+      Args:
+           game (Game): The Game object's results that will be analyzed.
+
+      Returns:
+           None
+       """
+
+def jackpot(self) -> int:
+    
+    """
+       Computes the number of jackpot results in the game.
+       A jackpot is a result where all faces are the same.
+
+       Returns:
+           int: The count of jackpot results.
+       """
+
+def face_counts_per_roll(self):
+       
+        """
+        Computes the count of a specific face rolled in each event (roll).
+
+        Args:
+            face (str or int): The face value to count occurrences of.
+
+        Returns:
+            pd.DataFrame: A DataFrame with roll numbers as the index, face values as columns, and counts in cells.
+        """
+
+def combo_count(self) -> pd.DataFrame:
+       
+        """
+        Computes the count of distinct combinations of rolled faces.
+
+        Returns:
+            pd.DataFrame: A DataFrame with distinct combinations as the MultiIndex and counts in a column.
+        """
+
+def permutation_count(self) -> pd.DataFrame:
+       
+        """
+        Computes the count of distinct permutations of rolled faces.
+
+        Returns:
+            pd.DataFrame: A DataFrame with distinct permutations as the MultiIndex and counts in a column.
+        """
 
 ## Installation
 
